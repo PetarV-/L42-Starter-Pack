@@ -17,7 +17,7 @@ def get_model():
     hidden_2 = Dense(hidden_size, activation='sigmoid')(hidden_1)
     out = Dense(nb_classes, activation='softmax')(hidden_2)
 
-    model = Model(input=inp, output=out)
+    model = Model(inputs=inp, outputs=out)
 
     print(model.summary())
 
